@@ -28,8 +28,7 @@ Nothing asked yet.
 3. screenshot desc3
 
 == Changelog ==
-- 1.0 - 2020/03/08:
-- Initial release.
+- https://github.com/luismisanchez/wp-unsplash-profile/releases
 
 == Upgrade Notice ==
 Not Upgradable yet.
