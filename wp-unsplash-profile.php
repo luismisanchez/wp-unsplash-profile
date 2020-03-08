@@ -7,7 +7,7 @@
 	 *
 	 * @wordpress-plugin
 	 * Plugin Name: Wordpress Unsplash Profile
-	 * Version:     0.1
+	 * Version:     1.0
 	 * Plugin URI:  https://luismi.sanchezarteaga.com
 	 * Description: Showcase your Unsplash.com profile photos on your Wordpress site.
 	 * Author:      Luismi Sánchez
