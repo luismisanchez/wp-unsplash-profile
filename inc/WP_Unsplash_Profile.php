@@ -79,7 +79,9 @@
 			add_action('wp_enqueue_scripts', array($this, 'wp_unsplash_enqueue_assets'));
 			add_shortcode('wp_unsplash_profile', array($this, 'wp_unsplash_shortcode'));
 			
-			$this->wp_unsplash_get_user_photos();
+			if ($this->settings['user_name']) {
+				$this->wp_unsplash_get_user_photos();
+			}
 
 		}
 		
