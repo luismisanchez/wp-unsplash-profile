@@ -1,0 +1,28 @@
+<div id="wp-unsplash-profile-head">
+
+    <div class="wp-unsplash-profile-avatar">
+        <img class="wp-unsplash-profile-avatar-image" src="{{ photos.0.user.profile_image.large }}" alt="Avatar of user {{ photos.0.user.name }}">
+    </div>
+
+    <div class="wp-unsplash-profile-profile">
+        <span>These are the last {{ settings.number_photos }} photos that</span>
+        <h2 class="wp-unsplash-profile-name"><a href="{{ photos.0.user.links.html }}" target="_blank">{{ photos.0.user.name }}</a></h2>
+        <span>has shared in Unsplash.</span>
+        <p><strong><a target="_blank" href="https://unsplash.com">Unsplash</a></strong> is the internet’s source of freely usable images.<br>Powered by creators everywhere.</p>
+    </div>
+
+</div>
+
+<div class="wp-unsplash-profile-gallery">
+
+    <div class="wp-unsplash-profile-grid" id="lightgallery">
+        {% for photo in photos %}
+            <div class="wp-unsplash-profile-element-item">
+                <a class="wp-unsplash-profile-anchor" data-src="{{ photo.urls.regular }}" href="{{ photo.urls.regular }}" data-download-url="{{ photos.0.user.links.html }}">
+                    <img src="{{ photo.urls.small }}" alt="{{ photo.description }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>

@@ -1,0 +1,89 @@
+.wp-unsplash-profile-avatar {
+    width: 48%;
+    margin-right: 2%;
+    height: 150px;
+    float: left;
+}
+
+img.wp-unsplash-profile-avatar-image {
+    float: right;
+    border-radius: 75px;
+}
+
+.wp-unsplash-profile-profile span {
+    font-size: 0.8em;
+}
+
+.wp-unsplash-profile-name a {
+    margin: 0;
+    color: #000000;
+    text-decoration: none;
+}
+
+.wp-unsplash-profile-profile h2 {
+    line-height: 0.8em;
+    text-decoration: none;
+    margin: 0 !important;
+}
+
+.wp-unsplash-profile-profile p {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+
+/* ---- isotope ---- */
+
+.wp-unsplash-profile-grid {
+    width: 80%;
+    margin: 15px auto;
+}
+
+/* clear fix */
+.wp-unsplash-profile-grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.grid-sizer, .wp-unsplash-profile-element-item {
+    position: relative;
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    width: 30%;
+}
+
+.wp-unsplash-profile-element-item > * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Style Sheet */
+@media all and (max-width: 480px) {
+    .wp-unsplash-profile-profile span {
+        font-size: 0.7em;
+        line-height: 1em;
+    }
+    .wp-unsplash-profile-profile h2 {
+        line-height: 0.9em;
+        margin: 0 !important;
+    }
+    img.wp-unsplash-profile-avatar-image {
+        float: left;
+    }
+    .wp-unsplash-profile-avatar {
+        width: 40%;
+        float: left;
+    }
+    .wp-unsplash-profile-profile p:before {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .grid-sizer, .wp-unsplash-profile-element-item {
+        width: 100%;
+    }
+}
