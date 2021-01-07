@@ -26,11 +26,6 @@ Showcase your Unsplash.com profile photos on your WordPress pages or posts.
 == Frequently Asked Questions ==
 Nothing asked yet.
 
-== Screenshots ==
-1. screenshot desc1
-2. screenshot desc2
-3. screenshot desc3
-
 == Changelog ==
 - https://github.com/luismisanchez/wp-unsplash-profile/releases
 
