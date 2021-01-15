@@ -1,9 +1,9 @@
 # Wordpress Unsplash Profile
 
 Contributors: luismisanchez\
-Tags: media,gallery,unsplash,shortcode\
+Tags: `media`,`gallery`,`unsplash`,`shortcode`\
 Requires at least: 5.3\
-Tested up to: 5.6\
+Tested up to: 5.3\
 Requires PHP: 7.2\
 License: CC BY\
 License URI: https://creativecommons.org/licenses/by/4.0/
