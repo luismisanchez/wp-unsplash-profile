@@ -13,7 +13,7 @@ Wordpress Unsplash Profile plugin.
 
 Please note: Although I have tested this code intensively on my site it may not work the same way on your Wordpress installation. It has been successfully tested on the latest versions of Wordpress under Nginx and Mariadb. If there are any errors in your installation, please open an issue (https://github.com/luismisanchez/wp-unsplash-profile/issues) and I will try to help you as soon as possible.
 
-Showcase your Unsplash.com profile photos on your WordPress pages or posts.
+Showcase your Unsplash.com profile photos on your WordPress pages or posts. Example: https://luismi.sanchezarteaga.es/unsplash-profile-plugin-for-wordpress/
 
 ### Installation
 
