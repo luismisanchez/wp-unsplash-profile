@@ -2,7 +2,8 @@
 	
 	use GuzzleHttp\Client;
 	use GuzzleHttp\Exception\ClientException;
-	use Twig\Environment;
+use GuzzleHttp\Psr7\Uri;
+use Twig\Environment;
 	use Twig\Error\LoaderError;
 	use Twig\Error\RuntimeError;
 	use Twig\Error\SyntaxError;
@@ -51,13 +52,13 @@
 			}
 			
 			if ($this->settings['access_key']) {
-				$base_uri = 'https://api.unsplash.com';
+				$base_uri = new Uri('https://api.unsplash.com');
 				$this->method = 'GET';
-				$this->uri = 'users/' . $this->settings['user_name'] . '/photos/?client_id=' . $this->settings['access_key'] . '&per_page=' . $number;
+				$this->uri = $base_uri->withPath('users/' . $this->settings['user_name'] . '/photos/?client_id=' . $this->settings['access_key'] . '&per_page=' . $number);
 			} else {
-				$base_uri = 'https://wp-unsplash-profile.wp-api.dev';
+				$base_uri = new Uri('https://wp-unsplash-profile.wp-api.dev');
 				$this->method = 'POST';
-				$this->uri = '/wp-json/wp-unsplash-proxy/v1/' . $this->settings['user_name'] . '/' . $number . '/' . $this->host;
+				$this->uri = $base_uri->withPath('/wp-json/wp-unsplash-proxy/v1/' . $this->settings['user_name'] . '/' . $number . '/' . $this->host);
 			}
 			
 			try {
@@ -66,7 +67,7 @@
 				]);
 
 			} catch ( ClientException $e) {
-				return $e->getCode();
+				wp_die($e->getCode());
 			}
 			
 			$loader = new FilesystemLoader(plugin_dir_path( __FILE__ ) . '../templates');
