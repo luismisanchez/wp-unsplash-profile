@@ -7,7 +7,7 @@
 	 *
 	 * @wordpress-plugin
 	 * Plugin Name: Wordpress Unsplash Profile
-	 * Version:     1.0
+	 * Version:     1.0.0
      * Requires at least: 5.7
      * Requires PHP:      7.4
 	 * Plugin URI:  https://luismi.sanchezarteaga.es/unsplash-profile-plugin-for-wordpress/
