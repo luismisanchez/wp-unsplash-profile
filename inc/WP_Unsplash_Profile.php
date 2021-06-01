@@ -39,14 +39,23 @@ use Twig\Environment;
 		private $uri;
 		
 		private $wp_unsplash_get_user_photos_response;
-		
-		public function __construct() {
+        /**
+         * @var string[]
+         */
+        private array $headers;
+
+        public function __construct() {
 			
 			add_action( 'admin_menu', array( $this, 'wp_unsplash_add_admin_menu' ) );
 			add_action( 'admin_init', array( $this, 'wp_unsplash_init_settings'  ) );
 			$this->host = $_SERVER['SERVER_NAME'];
 			$this->settings = get_option( 'wp_unsplash_settings' );
 			$number = $this->settings['number_photos'];
+            $this->headers = [
+                'headers' => [
+                    'User-Agent' => 'WpUnsplashProfile/1.0'
+                ]
+            ];
 			if (!$this->settings['number_photos']) {
 				$number = 10;
 			}
@@ -102,7 +111,7 @@ use Twig\Environment;
 		public function wp_unsplash_get_user_photos() {
 
 			try {
-				$this->wp_unsplash_get_user_photos_response = json_decode($this->client->request( $this->method, $this->uri )->getBody()->getContents());
+				$this->wp_unsplash_get_user_photos_response = json_decode($this->client->request( $this->method, $this->uri, $this->headers )->getBody()->getContents());
 			} catch ( ClientException $e) {
 				return $e->getCode();
 			}
