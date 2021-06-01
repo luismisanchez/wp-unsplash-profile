@@ -44,7 +44,7 @@ use Twig\Environment;
 			
 			add_action( 'admin_menu', array( $this, 'wp_unsplash_add_admin_menu' ) );
 			add_action( 'admin_init', array( $this, 'wp_unsplash_init_settings'  ) );
-			$this->host = $_SERVER['HTTP_HOST'];
+			$this->host = $_SERVER['SERVER_NAME'];
 			$this->settings = get_option( 'wp_unsplash_settings' );
 			$number = $this->settings['number_photos'];
 			if (!$this->settings['number_photos']) {
