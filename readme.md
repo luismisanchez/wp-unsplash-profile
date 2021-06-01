@@ -2,9 +2,9 @@
 
 Contributors: luismisanchez\
 Tags: `media`,`gallery`,`unsplash`,`shortcode`\
-Requires at least: 5.3\
-Tested up to: 5.3\
-Requires PHP: 7.2\
+Requires at least: 5.7\
+Tested up to: 5.7\
+Requires PHP: 7.4\
 License: CC BY\
 License URI: https://creativecommons.org/licenses/by/4.0/
 
@@ -21,7 +21,7 @@ Showcase your Unsplash.com profile photos on your WordPress pages or posts. Exam
 2. Upload zip file with your WordPress plugin manager.
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Set a Unsplash username under the plugin options (Unsplash Profile)
-5. Place [wp_unsplash_profile] shortcode in your page or post
+5. Place **[wp_unsplash_profile]** shortcode in your page or post
 6. Show it to the world :)
 
 ### Frequently Asked Questions
