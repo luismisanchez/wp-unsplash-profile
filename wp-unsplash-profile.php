@@ -8,10 +8,12 @@
 	 * @wordpress-plugin
 	 * Plugin Name: Wordpress Unsplash Profile
 	 * Version:     1.0
-	 * Plugin URI:  https://luismi.sanchezarteaga.com
+     * Requires at least: 5.7
+     * Requires PHP:      7.4
+	 * Plugin URI:  https://luismi.sanchezarteaga.es/unsplash-profile-plugin-for-wordpress/
 	 * Description: Showcase your Unsplash.com profile photos on your Wordpress site.
 	 * Author:      Luismi Sánchez
-	 * Author URI:  https://luismi.sanchezarteaga.com
+	 * Author URI:  https://luismi.sanchezarteaga.es
 	 * Text Domain: wp-unsplash-profile
 	 * Domain Path: /languages/
 	 * License:     CC BY 4.0
